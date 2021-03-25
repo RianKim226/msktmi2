@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MSK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div id = "grid">
+      <div id = "header"> <h1 onmouseover="MouseOver()">
+        <a href="msk.html">@msktmi Ver.2</a>
+      </h1></div>
+
+      <ul id = "menu">
+        <li><a href="london.html">London</a></li>
+        <li><a href="paris.html">Paris</a></li>
+        <li><a href="shanghai.html">Shanghai</a></li>
+        <li><a href="japan.html">Japan</a></li>
+        <li><a href="taipei.html">Taipei</a></li>
+      </ul>
+
+      <div id = "contents">
+        <p><div id = "photo"> <img id = "myphoto" src="./photo/story/msk3.jpeg" alt="No Photo"></div></p>
+        <h2>Minseok Kim</h2>
+        <h3><a href="https://www.instagram.com/msktmi/" target="_blank">@msktmi Ver.2</a></h3>
+        <h3>Contact : kminseok5167@gmail.com</h3>
+        <p>Hanyang University ERICA College of Computing</p>
+        <p>Major in Software Engineering</p>
+      </div>
+
+      <div id = "footer">
+        <div class = "js-clock"> 
+          <h3>00:00:00</h3> 
+        </div>
+        <br><br>
+        <a href="https://www.facebook.com/profile.php?id=100024319156736" target="_blank"><i class ="fa fa-facebook"></i></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.instagram.com/msktmi/" target="_blank"><i class ="fa fa-instagram"></i></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/RianKim226" target="_blank"><i class ="fa fa-github"></i></a>
+      </div>
+    </div>
+    <script src="clock.js">
+      const menuContainer = document.querySelector("header");
+      const menuTitle = menuContainer.querySelector("h1");
+
+      function MouseOver(){
+        menuTitle.style.color = "red";
+      }
+    </script>
+    
+  </body>
+</html>
+
+
+
+

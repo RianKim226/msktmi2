@@ -1,0 +1,70 @@
+@font-face {
+  font-family:"my_font";
+  src: url("./NanumSquareRegular.ttf");
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+body{
+  font-family: my_font;
+  font-size : 15px;
+  background-color: #F2F2F2;
+  color: black;
+}
+
+#grid{
+  display : grid;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-columns: 170px 1fr 150px;
+  grid-template-areas:
+  "header menu ."
+  "contents contents contents"
+  ". footer .";
+  grid-gap: 5px;
+}
+
+#grid #header{
+  grid-area: header;
+  border-right: 1px solid #CCCCCC;
+  text-align: center;
+  font-size: 10px;
+}
+
+#grid #menu{
+  grid-area: menu;
+  padding-top: 5px;
+  padding-left: 10px;
+  list-style: none;
+}
+
+#grid #menu li{
+  float: left;
+  position: relative;
+  padding-left: 15px;
+}
+
+#grid #contents{
+  grid-area : contents;
+  border-top: 1px solid #CCCCCC;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #CCCCCC;
+  text-align: center;
+  font-size: 15px;
+}
+
+#grid #footer{
+  grid-area: footer;
+  padding-top: 50px;
+  text-align: center;
+  padding-right: 10px;
+}
+
+#photo #myphoto{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 70%;
+}
